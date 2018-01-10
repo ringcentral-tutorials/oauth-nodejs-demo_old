@@ -1,0 +1,6 @@
+{
+    "title": "Learn RingCentral OAuth in Node.js with Express",
+    "repo": "ringcentral-tutorials/oauth-nodejs-demo",
+    "description": "A step by step tutorial to get you started with RingCentral OAuth in Node.js with Express",
+    "heroku": false
+}
