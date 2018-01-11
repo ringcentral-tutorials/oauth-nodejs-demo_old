@@ -17,7 +17,7 @@
 </div><div data-title="Configure the app appropriately" data-file="config-sample.env" class="step"><h2 id="configuration">Configuration</h2>
 <p>Edit the <code>.env</code> file to configure your client ID, client secret and redirect URL, etc.</p>
 <pre><code>$ cp config-sample.env .env
-$ vi config.js
+$ vi .env
 </code></pre><p>Please visit <a href="http://developer.ringcentral.com/">Developer Portal</a> to apply client ID and secret. And ensure the redirect URI in your config file has been entered in your app settings. By default, the URL is set to the following for this demo:</p>
 <pre><code>http://localhost:8080/callback
 </code></pre></div><div data-title="Create RingCentral SDK instance" data-file="app.js" data-highlight="35-39" class="step"><p>In the node.js entry file, create RingCentral SDK instance with parameters from the configuration file.</p></div><div data-title="Get login URL" data-file="app.js" data-highlight="48-51" class="step"><p>Get login URL from RingCentral SDK instance. The <code>authorize_uri</code> in the code is the login URL. It will be passed to the HTML page as template variable by mustache template engine.</p>
